@@ -16,7 +16,7 @@ methods:{
 });
 
 app.mount('#assignment');
-const app=Vue.createApp({
+const app3=Vue.createApp({
     data() {
         return {
 courseGoalA:'<h2>Finish the course and learn Vue</h2>',
@@ -36,7 +36,7 @@ supportLink:'https://support.gainsight.com/PX'
     }
 });
 
-app.mount('#user-goal');
+app3.mount('#user-goal');
 
 const app2=Vue.createApp({
 data(){
