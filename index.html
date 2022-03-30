@@ -13,6 +13,23 @@
     <script src="app.js" defer></script>
   </head>
   <body>
+    <h1>Vue Course Goals</h1>
+  </header>
+  <section id="user-goal">
+    <h2>My Course Goal</h2>
+    <!-- <p>{{outputGoal()}}</p>   -->
+    <p v-html="outputGoal()"></p>  
+
+    <p> Learn more about <a v-bind:href="supportLink">px</a></p>
+  </section>
+  <section id="events">
+    <h2>Events in action</h2>
+    <button v-on:click="addCounter(5)">ADD 5</button>
+    <button v-on:click="reduceCounter(5)">Reduce 5</button>
+    <p>Result:{{counter}}</p>
+    <input type="text" v-on:input="setName($event, 'ououy')">
+    <p>Your name: {{myName}}</p>
+  </section>
     <section id="assignment">
       <!-- 1) Output your name -->
       <h2>{{myName}}</h2>
@@ -29,5 +46,7 @@
       <!-- 6) Prepopulate the input field with your name via the "value" attribute -->
       <input type="text" v-bind:value="myName"/>
     </section>
+    <header>
+    
   </body>
 </html>
