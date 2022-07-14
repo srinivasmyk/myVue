@@ -1,4 +1,3 @@
-aptrinsic('identify',{id:"srinivas.myakala18@gmail.com"},{id:"BOK"});
 
 const app= Vue.createApp({
 data(){
