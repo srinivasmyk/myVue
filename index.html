@@ -3,32 +3,15 @@
   <head>
     <script>
     
-function initializeGainsightPX() 
-{
-    if (this.isGainsightPXInitialized) return;
-    
-    // Gainsight PX Tag
-    (function (n, t, a, e, x) {   
-        let i = "aptrinsic"; n[i] = n[i] || function () {
-            (n[i].q = n[i].q || []).push(arguments)
-        }, 
-        n[i].p = e, n[i].c = x;
-        
-        let r = t.createElement("script");
-        r.async = !0;
-        r.src = a + "?a=" + e;        
-        
-        let c = t.getElementsByTagName("script")[0];
-        c.parentNode.insertBefore(r, c);
-    })
-    (window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-KNFBP3CQEW3C-2"});
-    // End Gainsight PX Tag    
-    
-    this.isGainsightPXInitialized = true;
-}
-
-initializeGainsightPX();
+<!-- Gainsight PX Tag-->
+  <script type="text/javascript">
+  (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-O1USFYGJOV0S-2");
 </script>
+<!-- Gainsight PX Tag--></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue Basics</title>
